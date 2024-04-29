@@ -1,13 +1,19 @@
+const heroImg = document.querySelectorAll(".sliderImg");
 window.addEventListener("load", function (e) {
-   const heroImg = document.querySelectorAll(".sliderImg");
-   let timer = 0;
-   const countIterval = this.setInterval(() => {
-       console.log("fade in");
-       timer++
-       if (timer == 4) {
-           this.clearInterval(countIterval);
-       }
-   }, 3000);
-})
+  let timer = 1;
+    const countIterval = this.setInterval(() => {
+    heroImg[timer].classList.add("animate");
+    timer++;
+    if (timer > 2) {
+      timer = 0
+    }
+  }, 5000);
+});
 
- 
+console.log(heroImg);
+
+heroImg.forEach((img) => {
+    img.addEventListener("transitionend", (e) => {
+        e.target.classList.remove("animate")
+    })
+})
