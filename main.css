@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Noto Sans Display", sans-serif;
+    font-size: 1.1rem;
 }
 a{
     text-decoration: none;
@@ -44,9 +45,12 @@ nav a{
     gap: 20px;
 }
 .hero{
+    background-image: url("./assets/image1.jpg");
     height: 100vh;
     width: 100%;
-    background: #fff;
+     object-fit: cover;
+     background-attachment: fixed;
+     transition: all 5.0s ease-in-out;
 }
 
 .hero::after {
@@ -65,15 +69,29 @@ nav a{
     position: relative;
     width: 100%;
     height: 100%;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
 }
 
-.hero .slider img{
-    display: block;
+.potraits{
+    display: flex;
+    margin-top: 100px;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    transition: all 3.0s ease-in-out;
+    height: 100vh;
+}
+
+.potrait-info{
+    display: flex;
+    padding: 80px;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    color: #000000;
+
+}
+
+.potrait-img{
+    background-image: url("./assets/artist.jpg");
+    object-fit:cover;
+    background-size: 50%;
+    background-attachment: fixed;
+    width: 50%;
 }

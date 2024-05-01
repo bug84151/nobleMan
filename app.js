@@ -6,8 +6,10 @@ slideImages[0] = "./assets/image1.jpg"
 slideImages[1] = "./assets/image2.jpg";
 slideImages[2] = "./assets/image3.jpg";
 
+const heroBg = document.querySelector(".hero")
+
 function changeImg() { 
-  document.slide.src = slideImages[i]
+  heroBg.style.backgroundImage =`url(${slideImages[i]})`
 
   if (i < slideImages.length - 1) {
     i++
