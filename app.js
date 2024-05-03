@@ -21,3 +21,10 @@ function changeImg() {
 }
 
 window.addEventListener("load", changeImg);
+
+const about = document.querySelector(".about");
+const observer = new IntersectionObserver(function (entries) {
+  console.log(entries);
+}, { threshold: 1});
+
+observer.observe(about)
