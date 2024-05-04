@@ -23,8 +23,12 @@ function changeImg() {
 window.addEventListener("load", changeImg);
 
 const about = document.querySelector(".about");
+const aboutText = document.querySelector(".about-text");
+
 const observer = new IntersectionObserver(function (entries) {
-  console.log(entries);
-}, { threshold: 1});
+  if (entries[0].isIntersecting) {
+    aboutText.style.margin = "0"
+  }
+}, { threshold: 0.8});
 
 observer.observe(about)
