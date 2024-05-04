@@ -1,6 +1,6 @@
 let i = 0
 const slideImages = []
-const time = 8000
+const time = 6000
 
 slideImages[0] = "./assets/image1.jpg"
 slideImages[1] = "./assets/image2.jpg";
