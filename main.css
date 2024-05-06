@@ -165,8 +165,9 @@ nav a {
 }
 
 .samples{
-height: 250px;
-width: 90%;
+height: 100vh;
+background: #000;
+width: 100%;
 margin: auto;
 position: relative;
 display: grid;
@@ -185,8 +186,8 @@ animation: scroll 60s linear infinite;
 }
 
 .card{
-height: 200px;
-width: 250px;
+height: 500px;
+width: 700px;
 display: flex;
 align-items: center;
 padding: 15px;
@@ -200,27 +201,6 @@ perspective: 100px;
 
 .card img:hover{
   transform: translateZ(20px);
-}
-
-.samples::before,
-.samples::after{
-  background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
-  content: "";
-  height: 100%;
-  width: 15%;
-  position: absolute;
-  z-index: 300;
-}
-
-.samples::before{
-  left: 0;
-  top: 0;
-}
-
-.samples::after{
-  right: 0;
-  top: 0;
-  transform: rotateZ(180deg);
 }
 
 .show-case{
