@@ -18,7 +18,7 @@ nav {
   padding: 20px 50px;
   position: sticky;
   top: 0;
-  z-index: 300;
+  z-index: 700;
   color: #fff;
   font-weight: 600;
 }
@@ -166,7 +166,7 @@ nav a {
 
 .samples{
 height: 100vh;
-background: #000;
+background: #fff;
 width: 100%;
 margin: auto;
 position: relative;
@@ -206,7 +206,7 @@ perspective: 100px;
 .show-case{
     display: flex;
     flex-direction: column;
-    background-color: gray;
+    background-color: #fff;
 }
 
 .piece {
@@ -243,9 +243,69 @@ perspective: 100px;
 }
 
 .contact{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
     width: 100%;
     height: 100vh;
-    background: yellow;
+    background-image: url("https://images.pexels.com/photos/6727550/pexels-photo-6727550.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    object-fit: cover;
+}
+
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  height: 80%;
+  width: 50%;
+  padding: 30px;
+  background: rgba(77, 74, 74, 0.3);
+  border-radius: 20px;
+  z-index: 300;
+}
+
+.contact-text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.contact-form form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 80%;
+}
+
+.contact-form form input{
+  border-radius: 10px;
+  background: rgba(139, 133, 133, 0.3);
+  height: 40px;
+  padding: 10px 15px;
+}
+
+.contact-form form input:last-child{
+  height: 200px;
+  display: flex;
+  align-items: baseline;
+}
+
+.contact::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 200;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
 }
 
 
