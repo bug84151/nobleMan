@@ -279,21 +279,23 @@ perspective: 100px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   width: 80%;
 }
 
 .contact-form form input{
   border-radius: 10px;
+  font-size: 15px;
   background: rgba(139, 133, 133, 0.3);
   height: 40px;
   padding: 10px 15px;
 }
 
-.contact-form form input:last-child{
-  height: 200px;
-  display: flex;
-  align-items: baseline;
+.contact-form form textarea{
+  padding: 20px;
+  font-size: 15px;
+   border-radius: 10px;
+  background: rgba(139, 133, 133, 0.3);
 }
 
 .contact::after{
