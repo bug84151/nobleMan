@@ -5,6 +5,7 @@
   font-family: "Noto Sans Display", sans-serif;
   font-size: 1.1rem;
 }
+
 a {
   text-decoration: none;
 }
@@ -14,13 +15,20 @@ nav {
   justify-content: space-between;
   align-items: center;
   background: transparent;
+  width: 100%;
   height: 50px;
   padding: 20px 50px;
-  position: sticky;
-  top: 0;
+  position: fixed;
   z-index: 700;
   color: #fff;
   font-weight: 600;
+  transition: all 0.2s ease-in;
+
+}
+
+nav div:last-child{
+  width: 150px;
+  height: 50px;
 }
 
 nav a {
@@ -43,13 +51,18 @@ nav a {
   align-items: center;
   gap: 20px;
 }
+
+.darkNav{
+  background: #000;
+}
+
 .hero {
   background-image: url("./assets/image1.jpg");
   height: 100vh;
   width: 100%;
   object-fit: cover;
   background-attachment: fixed;
-  transition: all 5s ease-in-out;
+  transition: all 5s ease-in;
 }
 
 .hero::after {
@@ -166,7 +179,7 @@ nav a {
 
 .samples{
 height: 100vh;
-background: #fff;
+background: #382d2d;
 width: 100%;
 margin: auto;
 position: relative;
@@ -207,6 +220,7 @@ perspective: 100px;
     display: flex;
     flex-direction: column;
     background-color: #fff;
+    padding: 20px;
 }
 
 .piece {
@@ -308,6 +322,12 @@ perspective: 100px;
   z-index: 200;
   background: rgba(0, 0, 0, 0.6);
   box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+}
+
+footer{
+  width: 100%;
+  height: 40vh;
+  background: #fffdfd;
 }
 
 

@@ -23,12 +23,26 @@ function changeImg() {
 window.addEventListener("load", changeImg);
 
 const about = document.querySelector(".about");
+const potrait = document.querySelector(".potraits")
+const nav = document.querySelector(".nav")
 const aboutText = document.querySelector(".about-text");
 
 const observer = new IntersectionObserver(function (entries) {
   if (entries[0].isIntersecting) {
     aboutText.style.margin = "0"
   }
-}, { threshold: 0.8});
+}, { threshold: 0.8 });
+
+const navObserver = new IntersectionObserver(
+  function (entries) {
+    if (entries[0].isIntersecting) {
+      nav.classList.add("darkNav");
+    } else {
+      nav.classList.remove("darkNav");
+    }
+  },
+  {threshold: 0.1,}
+);
 
 observer.observe(about)
+navObserver.observe(potrait)
