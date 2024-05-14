@@ -31,7 +31,7 @@ const observer = new IntersectionObserver(function (entries) {
   if (entries[0].isIntersecting) {
     aboutText.style.margin = "0"
   }
-}, { threshold: 0.8 });
+}, { threshold: 0.9 });
 
 const navObserver = new IntersectionObserver(
   function (entries) {
