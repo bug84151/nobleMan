@@ -23,7 +23,7 @@ function changeImg() {
 window.addEventListener("load", changeImg);
 
 const about = document.querySelector(".about");
-const potrait = document.querySelector(".potraits")
+const header = document.querySelector("header")
 const nav = document.querySelector(".nav")
 const aboutText = document.querySelector(".about-text");
 
@@ -36,13 +36,13 @@ const observer = new IntersectionObserver(function (entries) {
 const navObserver = new IntersectionObserver(
   function (entries) {
     if (entries[0].isIntersecting) {
-      nav.classList.add("darkNav");
-    } else {
       nav.classList.remove("darkNav");
+    } else {
+      nav.classList.add("darkNav");
     }
   },
-  {threshold: 0.1,}
+  {threshold: 1,}
 );
 
 observer.observe(about)
-navObserver.observe(potrait)
+navObserver.observe(header)

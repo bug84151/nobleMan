@@ -53,7 +53,7 @@ nav a {
 }
 
 .darkNav{
-  background: #382d2d;
+  background: #461919;
 }
 
 .hero {
@@ -190,6 +190,8 @@ overflow: hidden;
 
 .cards{
 display: flex;
+gap: 15px;
+padding: 15px 0;
 width: calc(250px * 18);
 animation: scroll 60s linear infinite;
 }
@@ -199,15 +201,16 @@ animation: scroll 60s linear infinite;
 }
 
 .card{
-height: 500px;
-width: 700px;
+height: 450px;
+width: 300px;
 display: flex;
 align-items: center;
-padding: 15px;
 perspective: 100px;
+border-radius: 40px;
 }
 
 .card img{
+  height: 100%;
   width: 100%;
   transition: transform 1s;
 }
@@ -228,7 +231,6 @@ perspective: 100px;
   height: 760px;
   width: 100%;
   margin: 0 auto;
-  border-radius: 20px;
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3);
 }
 
