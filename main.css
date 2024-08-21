@@ -65,6 +65,27 @@ nav a {
   transition: all 5s ease-in;
 }
 
+.gallery-hero{
+  background-image: url("https://images.pexels.com/photos/1674049/pexels-photo-1674049.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  background-attachment: fixed;
+  transition: all 5s ease-in;
+}
+
+.gallery-hero .hero-text{
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 60px;
+  color: #fff;
+  z-index: 300;
+}
+
 .hero::after {
   content: "";
   position: absolute;
