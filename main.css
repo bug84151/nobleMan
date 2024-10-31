@@ -10,6 +10,48 @@ a {
   text-decoration: none;
 }
 
+.modal-wrapper{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(21, 22, 22, 0.7);
+  z-index: 4000;
+}
+
+.visible{
+  display: flex;
+}
+
+.modal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  height: 80%;
+  width: 70%;
+  background: #fff;
+  border-radius: 20px;
+  z-index: 5000;
+}
+
+.modal span{
+  height: 100px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.modal img{
+  width: 100%;
+  max-width: 70%;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -63,27 +105,6 @@ nav a {
   object-fit: cover;
   background-attachment: fixed;
   transition: all 5s ease-in;
-}
-
-.gallery-hero{
-  background-image: url("https://images.pexels.com/photos/1674049/pexels-photo-1674049.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-  height: 100vh;
-  width: 100%;
-  object-fit: cover;
-  background-attachment: fixed;
-  transition: all 5s ease-in;
-}
-
-.gallery-hero .hero-text{
-  position: relative;
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 60px;
-  color: #fff;
-  z-index: 300;
 }
 
 .hero::after {
